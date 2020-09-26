@@ -9,23 +9,35 @@ tags: ["R Markdown", "plot", "regression"]
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(collapse = TRUE)
+library(opendatatoronto)
+library(dplyr)
+library(tidyverse)
+library(ggplot2)
+
+# get package
+package <- show_package("64b54586-6180-4485-83eb-81e8fae3b8fe")
+package
+
+# get all resources for this package
+resources <- list_package_resources("64b54586-6180-4485-83eb-81e8fae3b8fe")
+
+# identify datastore resources; by default, Toronto Open Data sets datastore resource format to CSV for non-geospatial and GeoJSON for geospatial resources
+datastore_resources <- filter(resources, tolower(format) %in% c('csv', 'geojson'))
+
+# load the first datastore resource as a sample
+covid_data <- filter(datastore_resources, row_number()==1) %>% get_resource()
+covid_data
 ```
 
 # Abstract
 we use @citetidyverse
 
+
 # Introduction
 
 # Data Introduction
-how i introduce the sceninrio and objectives
+how i introduce the scenario and objectives
 types of the variables
-
-
-# R Markdown
-
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
-
-You can embed an R code chunk like this:
 
 ```{r cars}
 summary(cars)
