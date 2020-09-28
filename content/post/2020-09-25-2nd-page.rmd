@@ -1,8 +1,0 @@
----
-title: 2nd page
-author: ~
-date: '2020-09-25'
-slug: 2nd-page
-categories: []
-tags: []
----

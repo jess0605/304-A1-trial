@@ -8,44 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Fri, 25 Sep 2020 21:13:14 -0500</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Jess&#39;s 304 Assignment</title>
-      <link>/2020/09/25/jesss-304-assignment/</link>
+      <title>Jess&#39;s STA304 Assignment1</title>
+      <link>/2020/09/25/jesss-sta304-assignment1/</link>
       <pubDate>Fri, 25 Sep 2020 21:13:14 -0500</pubDate>
       
-      <guid>/2020/09/25/jesss-304-assignment/</guid>
-      <description>Abstract we use Wickham et al. (2019)
- Introduction  Data Introduction how i introduce the sceninrio and objectives types of the variables
- R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
-You can embed an R code chunk like this:
-summary(cars) ## speed dist ## Min.</description>
-    </item>
-    
-    <item>
-      <title>2nd page</title>
-      <link>/2020/09/25/2nd-page/</link>
-      <pubDate>Fri, 25 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/2020/09/25/2nd-page/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A Plain Markdown Post</title>
-      <link>/2016/12/30/a-plain-markdown-post/</link>
-      <pubDate>Fri, 30 Dec 2016 21:49:57 -0700</pubDate>
-      
-      <guid>/2016/12/30/a-plain-markdown-post/</guid>
-      <description>This is a post written in plain Markdown (*.md) instead of R Markdown (*.Rmd). The major differences are:
- You cannot run any R code in a plain Markdown document, whereas in an R Markdown document, you can embed R code chunks (```{r}); A plain Markdown post is rendered through Blackfriday, and an R Markdown document is compiled by rmarkdown and Pandoc.  There are many differences in syntax between Blackfriday&amp;rsquo;s Markdown and Pandoc&amp;rsquo;s Markdown.</description>
-    </item>
-    
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>/2015/01/01/lorem-ipsum/</link>
-      <pubDate>Thu, 01 Jan 2015 13:09:13 -0600</pubDate>
-      
-      <guid>/2015/01/01/lorem-ipsum/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</description>
+      <guid>/2020/09/25/jesss-sta304-assignment1/</guid>
+      <description>Abstract Responding to the current ongoing outbreak, the reported focus on the trend of daily new cases of COVID-19 in Toronto and the proportion of different age groups in this outbreak. According to the dataset extracted from the provincial communicable disease reporting system (iPHIS) and Toronto’s custom COVID-19 case management system (CORES). The data supported the hypothesis that the second outbreak was mainly contributed by the young ages, closer monitoring and focus should be put on the young population since the main source of infection is close contact.</description>
     </item>
     
   </channel>
