@@ -1,5 +1,5 @@
 ---
-title: "Jess's STA304 Assignment1"
+title: "Jess's STA304 A1: Age Group Distribution Of COVID_19 Reported Cases"
 subtitle: "COVID-19 Cases Status in Toronto"
 author: "Jingxi Huang"
 date: 2020-09-25T21:13:14-05:00

@@ -1,13 +1,82 @@
----
-title: "Jess's STA304 A1: Age Group Distribution Of COVID_19 Reported Cases"
-subtitle: "COVID-19 Cases Status in Toronto"
-author: "Jingxi Huang"
-date: 2020-09-25T21:13:14-05:00
-bibliography: 'references.bib'
-categories: ["R"]
-tags: ["R Markdown", "plot", "regression"]
----
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.75.1" />
 
+
+<title>Jess&#39;s STA304 A1: Age Group Distribution Of COVID_19 Reported Cases - COVID-19 Cases Status in Toronto  - Jess&#39;s website</title>
+<meta property="og:title" content="Jess&#39;s STA304 A1: Age Group Distribution Of COVID_19 Reported Cases - Jess&#39;s website">
+
+
+  <link href='../../../../favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/jess0605">Facebook</a></li>
+    
+    <li><a href="https://github.com/jess0605">GitHub</a></li>
+    
+    <li><a href="https://www.instagram.com/jesshonest/?hl=en">Instagram</a></li>
+    
+    <li><a href="https://weibo.com/u/2807213635">Weibo</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">9 min read</span>
+    
+
+    <h1 class="article-title">Jess&#39;s STA304 A1: Age Group Distribution Of COVID_19 Reported Cases</h1>
+
+    
+    <span class="article-date">2020-09-25</span>
+    
+
+    <div class="article-content">
+      
 
 
 <div id="abstract" class="section level1">
@@ -48,7 +117,7 @@ tags: ["R Markdown", "plot", "regression"]
   geom_text(stat=&#39;count&#39;, aes(label=..count..), vjust=-0.5)
 p1</code></pre>
 <div class="figure"><span id="fig:bar"></span>
-<img src="/post/2020-09-25-r-rmarkdown_files/figure-html/bar-1.png" alt="Toronto Cases overview" width="672" />
+<img src="../../../../post/2020-09-25-r-rmarkdown_files/figure-html/bar-1.png" alt="Toronto Cases overview" width="672" />
 <p class="caption">
 Figure 1: Toronto Cases overview
 </p>
@@ -64,7 +133,7 @@ Figure 1: Toronto Cases overview
   geom_text(stat=&#39;count&#39;, aes(label=..count..), bjust=-0.5)
 ## Warning: Ignoring unknown parameters: bjust
 p2</code></pre>
-<p><img src="/post/2020-09-25-r-rmarkdown_files/figure-html/unnamed-chunk-1-1.png" width="672" />
+<p><img src="../../../../post/2020-09-25-r-rmarkdown_files/figure-html/unnamed-chunk-1-1.png" width="672" />
 From the bar graph above, we could inform that the main source of infection is having close contact with potential virsus carriers.</p>
 <pre class="r"><code>date &lt;- seq(as.Date(&#39;2020-01-23&#39;)-20,as.Date(&#39;2020-09-30&#39;), &#39;30 days&#39;)
 date_breaks = c(seq(18264,18526,15))
@@ -84,7 +153,7 @@ p0 &lt;- covid_data %&gt;%
 
 p0</code></pre>
 <div class="figure">
-<img src="/post/2020-09-25-r-rmarkdown_files/figure-html/single%20plot-1.png" alt="Historial Number of Newly Reported Cases" width="672" />
+<img src="../../../../post/2020-09-25-r-rmarkdown_files/figure-html/single%20plot-1.png" alt="Historial Number of Newly Reported Cases" width="672" />
 <p class="caption">
 (#fig:single plot)Historial Number of Newly Reported Cases
 </p>
@@ -106,7 +175,7 @@ p0</code></pre>
   scale_x_date(breaks = date, labels = date_format(&quot;%Y-%b&quot;)) +
   theme_fivethirtyeight(base_size = 12, base_family = &quot;sans&quot;)
 ## Warning: Width not defined. Set with `position_dodge(width = ?)`</code></pre>
-<p><img src="/post/2020-09-25-r-rmarkdown_files/figure-html/unnamed-chunk-2-1.png" width="672" />
+<p><img src="../../../../post/2020-09-25-r-rmarkdown_files/figure-html/unnamed-chunk-2-1.png" width="672" />
 In the density graph using <span class="citation">Arnold (2019)</span> and <span class="citation">Wickham and Seidel (2020)</span>, we find that the infected are of the group of elders in preliminary stage, elderly distribution of cases is heavily right skewed. According to the skewness we could conclude that the number of the elders being infected significantly have dropped, this trend is well maintained and it is not affected by the removal of city lockdown. Moreover, it shows that the trends of the elders are suppressed because of zero sign of being skew to left. For the middle ages, the newly reported cases showed to centralize on April to June. While the youth reported the least amount during this period, it did not reach its first peak until June, however, we could find the mid-August mode of daily new cases in youth to be the same as the June one.</p>
 <p>Shifted sight to August, 2020, by comparing the peaks of distributions, the August mode of the youth showed to be higher than upper-age groups. There exists evidence supporting that the major contributor of the second outbreak. Due to the similar modes within the young cases distribution,it is suspected that the pandemic among the youngsters could be periodic.</p>
 </div>
@@ -136,3 +205,47 @@ In the density graph using <span class="citation">Arnold (2019)</span> and <span
 </div>
 </div>
 </div>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
+
+    
+<script src="../../../../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+
